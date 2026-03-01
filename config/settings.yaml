@@ -1,0 +1,20 @@
+# funNLP-toolkit Configuration
+
+# Data paths
+data_dir: "../../funNLP/data"
+
+# Dictionary settings
+dictionaries:
+  encoding: "utf-8"
+  cache_enabled: true
+  cache_dir: ".cache"
+
+# Search settings
+search:
+  max_results: 20
+  min_score: 3
+
+# Output settings
+output:
+  format: "text"  # text, json, markdown
+  encoding: "utf-8"
