@@ -1,10 +1,10 @@
 # funNLP-toolkit
 
-中文 NLP 资源工具包 - 基于 funNLP 项目的 OpenClaw Skill
+中文 NLP 资源工具包 - 基于 funNLP 项目
 
 ## 描述
 
-funNLP-toolkit 是基于 [funNLP](https://github.com/fighting41love/funNLP) 项目的 OpenClaw Skill，提供中文 NLP 常用资源的快速加载和使用。
+funNLP-toolkit 是基于 [funNLP](https://github.com/fighting41love/funNLP) 项目的中文 NLP 工具包，提供中文 NLP 常用资源的快速加载和使用。
 
 ## 功能
 

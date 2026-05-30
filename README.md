@@ -1,10 +1,10 @@
 # funNLP-toolkit
 
-中文 NLP 资源工具包 - OpenClaw Skill
+中文 NLP 资源工具包
 
 ## 简介
 
-funNLP-toolkit 是基于 [funNLP](https://github.com/fighting41love/funNLP) 项目的 OpenClaw Skill，提供中文 NLP 常用资源的快速加载和使用。
+funNLP-toolkit 是基于 [funNLP](https://github.com/fighting41love/funNLP) 项目的中文 NLP 工具包，提供中文 NLP 常用资源的快速加载和使用。
 
 ## 功能特性
 
@@ -64,9 +64,27 @@ python scripts/load_dict.py --type idioms --output json
 
 ## 配置
 
+### 词典目录
+
+词典目录按以下优先级解析（无需 checkout funNLP 也能用自己的词典）：
+
+1. CLI 参数 `--data-dir`
+2. 环境变量 `FUNNLP_DATA_DIR`
+3. 缺省值（相对本仓库推断同级 `funNLP/data`）
+
+```bash
+# 用环境变量指定自己的词典目录
+export FUNNLP_DATA_DIR=/path/to/my/dicts
+python scripts/load_dict.py --type stopwords --stats
+
+# 或用 CLI 参数（优先级最高）
+python scripts/load_dict.py --data-dir /path/to/my/dicts --type stopwords --stats
+```
+
+### 其它配置
+
 编辑 `config/settings.yaml` 自定义配置：
 ```yaml
-data_dir: "../../funNLP/data"
 dictionaries:
   encoding: "utf-8"
   cache_enabled: true
